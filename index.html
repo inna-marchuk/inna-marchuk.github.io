@@ -1,13 +1,42 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>
             WELCOME !
         </title>
     </head>
     <body>
-        <h1 class="inna-header">Inna Marchuk</h1>
+        <h1 class="myclass-1">Inna Marchuk</h1>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/z1gul74YRZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+        <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+        </div>
+
+        <button class="btn-group-vertical">click me</button>
+        
+        <div class="fb-customerchat" page_id="462639600873692"></div>
+    
+    
     </body>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '302435917010403',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+          });
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
 </html>
